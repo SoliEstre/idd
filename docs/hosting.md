@@ -52,3 +52,12 @@ Review the decision at first deployment and every 90 days. Preserve a custom dom
 ## Initial hosting policy
 
 Start with a hosting-neutral static site. After owner approval, deploy it with GitHub Pages. Keep relative URLs and no host-only runtime dependency. Reconsider self-hosting when server-side behavior, sustained platform-limit pressure, regulatory control, or operational observability requires it.
+
+## Sources checked
+
+Checked on 2026-08-06:
+
+- [What is GitHub Pages?](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
+- [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
+- [About custom domains and GitHub Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
+- [Securing a GitHub Pages site with HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)

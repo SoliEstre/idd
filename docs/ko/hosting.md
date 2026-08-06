@@ -52,3 +52,12 @@
 ## 초기 호스팅 정책
 
 호스트에 종속되지 않는 정적 사이트로 시작합니다. 소유자 승인 뒤 GitHub Pages에 배포합니다. 상대 주소를 유지하고 특정 호스트에서만 동작하는 실행 의존성을 두지 않습니다. 서버 동작, 지속적인 플랫폼 한도 압력, 규정상 통제 또는 운영 관찰 요구가 생기면 자체 호스팅을 다시 검토합니다.
+
+## 확인한 출처
+
+2026-08-06에 확인했습니다.
+
+- [GitHub Pages란 무엇인가](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
+- [GitHub Pages 사용 한도](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
+- [사용자 지정 도메인과 GitHub Pages 안내](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
+- [GitHub Pages 사이트에 HTTPS 적용하기](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)
