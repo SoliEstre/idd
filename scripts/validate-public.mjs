@@ -42,13 +42,15 @@ function localTargetExists(sourceFile, target) {
 
 const files = walk(root).sort();
 const textFiles = files.filter((file) =>
-  ['.css', '.html', '.json', '.md', '.mjs', '.txt', '.yaml', '.yml'].includes(extname(file).toLowerCase()),
+  ['.css', '.html', '.json', '.md', '.mjs', '.txt', '.xml', '.yaml', '.yml'].includes(extname(file).toLowerCase()),
 );
 
 const requiredPaths = [
   'README.md',
   'README.ko.md',
+  'LICENSE',
   'AGENTS.md',
+  '.github/workflows/pages.yml',
   'ai/idd-spec.md',
   'ai/index.json',
   'docs/status.md',
@@ -58,11 +60,29 @@ const requiredPaths = [
   'site/index.html',
   'site/ko/index.html',
   'site/llms.txt',
+  'site/.nojekyll',
+  'site/sitemap.xml',
   '.github/workflows/validate.yml',
 ];
 
 for (const path of requiredPaths) {
   if (!existsSync(resolve(root, path))) fail(`missing required public surface: ${path}`);
+}
+
+const licensePath = resolve(root, 'LICENSE');
+if (existsSync(licensePath)) {
+  const license = readFileSync(licensePath, 'utf8');
+  if (!license.startsWith('MIT License\n') || !license.includes('Copyright (c) 2026 SoliEstre')) {
+    fail('LICENSE is not the approved MIT license notice for SoliEstre');
+  }
+}
+
+const sitemapPath = resolve(root, 'site/sitemap.xml');
+if (existsSync(sitemapPath)) {
+  const sitemap = readFileSync(sitemapPath, 'utf8');
+  for (const url of ['https://soliestre.github.io/idd/', 'https://soliestre.github.io/idd/ko/']) {
+    if (!sitemap.includes(`<loc>${url}</loc>`)) fail(`site/sitemap.xml is missing ${url}`);
+  }
 }
 
 for (const file of files.filter((path) => extname(path).toLowerCase() === '.json')) {

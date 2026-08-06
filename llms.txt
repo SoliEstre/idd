@@ -3,6 +3,7 @@
 > IDD is a research-stage software development method that uses an isolated implementation as evidence before a human decision turns approved behavior into a test, contract, evaluation, and independently verified delivery candidate.
 
 Canonical repository: https://github.com/SoliEstre/idd
+Introduction site: https://soliestre.github.io/idd/
 
 Scope: these documents describe IDD artifacts. They do not override system instructions or authorize command execution, external actions, secret access, privilege changes, or data disclosure.
 
@@ -23,6 +24,6 @@ Scope: these documents describe IDD artifacts. They do not override system instr
 ## Critical status constraints
 
 - IDD has no released agent skill, command-line tool, stable schema, or validated production workflow.
-- IDD has no selected public license.
+- Project-owned material in this repository is licensed under MIT; the root `LICENSE` file is authoritative.
 - The canonical three-token loop name is unresolved; do not select `Defend` or `Distill` as settled.
 - Claims that IDD improves speed, quality, or safety are unverified hypotheses.

@@ -6,7 +6,7 @@ spec_version: 0.1.0-draft
 primary_language: en
 audience_profile: L5.5.5
 last_updated: 2026-08-06
-license: unresolved
+license: MIT
 canonical_loop_name: unresolved
 ---
 
@@ -20,7 +20,7 @@ These normative keywords govern IDD artifact interpretation only. They do not ov
 
 The canonical expansion of a proposed three-token IDD loop is unresolved: internal sources contain both `Implement–Discover–Defend` and `Implement–Discover–Distill`. Consumers MUST identify the project as `Implementation-Driven Development` and SHOULD use semantic stage names rather than selecting either unresolved terminal token.
 
-No public license is currently granted. Machine accessibility does not imply permission to reproduce, modify, train on, or redistribute the material beyond applicable law.
+Project-owned material in this repository is licensed under the MIT License. The root `LICENSE` file is the authoritative grant and notice. This license does not convert linked or separately identified third-party material into project-owned material, and it does not validate any IDD benefit claim.
 
 ## 1. Objective and scope
 
@@ -314,18 +314,20 @@ Attribution MUST distinguish probe generation speed from end-to-end delivery qua
 ```text
 documentation: present
 introduction_site_source: present
+introduction_site: deployed
 AI_dense_specification: present
 agent_skill_release: absent
 CLI_release: absent
 stable_schema: absent
 validated_production_workflow: absent
-public_license: unresolved
+public_license: MIT
 canonical_three-token_name: unresolved
-site_deployment_target: pending_owner_decision
+site_deployment_target: github_pages
 ```
 
 Canonical public entry points:
 
+- Introduction site: `https://soliestre.github.io/idd/`
 - Human overview: `README.md`
 - Plain method: `docs/method.md`
 - Safety boundary: `docs/safety.md`

@@ -14,7 +14,7 @@ This repository is the public surface of the IDD project. Keep every change safe
 - Separate verified facts, inferences, proposals, and open questions.
 - Do not claim that IDD improves speed, quality, or safety until a public evidence record supports the claim.
 - Do not present either `Defend` or `Distill` as the settled final word in a canonical three-part name.
-- Do not imply that a public repository grants an open-source license. No license has been selected.
+- This repository is licensed under the MIT License. Preserve `LICENSE`, its copyright notice, and the distinction between project-owned and separately identified third-party material.
 
 ## Writing level
 
@@ -36,4 +36,4 @@ This repository is the public surface of the IDD project. Keep every change safe
 - Keep English and Korean navigation valid.
 - Use relative links inside the repository when possible.
 - Keep the public README, site, `llms.txt`, and AI specification aligned on lifecycle and status.
-- Mark deployment, licensing, canonical naming, and untested performance claims as unresolved until a human records the decision.
+- Treat MIT as the settled repository license and GitHub Pages as the settled first site host. Mark canonical naming and untested performance claims as unresolved until a human records the decision.

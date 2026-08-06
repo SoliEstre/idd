@@ -31,6 +31,13 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+html[lang="ko"] body {
+  font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", ui-sans-serif, system-ui, sans-serif;
+  word-break: keep-all;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
 a {
   color: inherit;
   text-underline-offset: 0.22em;
@@ -180,11 +187,37 @@ h2 {
   font-size: clamp(2.35rem, 4.8vw, 4.7rem);
 }
 
+html[lang="ko"] h1,
+html[lang="ko"] h2 {
+  font-family: "Noto Serif KR", "Nanum Myeongjo", Batang, "Malgun Gothic", serif;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1.16;
+  text-wrap: balance;
+}
+
+html[lang="ko"] h1 {
+  font-size: clamp(3rem, 4.5vw, 4.05rem);
+}
+
+.headline-line {
+  display: block;
+}
+
+html[lang="ko"] h2 {
+  font-size: clamp(2.2rem, 4.4vw, 4.25rem);
+}
+
 .hero-intro {
   max-width: 710px;
   margin: 34px 0 0;
   color: var(--ink-soft);
   font-size: clamp(1.08rem, 1.7vw, 1.32rem);
+}
+
+html[lang="ko"] .hero-intro {
+  max-width: 760px;
+  line-height: 1.8;
 }
 
 .hero-actions {
@@ -519,6 +552,13 @@ h2 {
   line-height: 1.18;
 }
 
+html[lang="ko"] .choice-grid h3 {
+  font-family: "Noto Serif KR", "Nanum Myeongjo", Batang, "Malgun Gothic", serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.35;
+}
+
 .choice-grid p:last-child {
   max-width: 490px;
   margin-bottom: 0;
@@ -638,6 +678,15 @@ footer > a {
 
   h2 {
     font-size: clamp(2.15rem, 11vw, 3.3rem);
+  }
+
+  html[lang="ko"] h1 {
+    font-size: clamp(2rem, 8.5vw, 2.65rem);
+    line-height: 1.2;
+  }
+
+  html[lang="ko"] h2 {
+    font-size: clamp(2rem, 9.8vw, 3rem);
   }
 
   .hero {

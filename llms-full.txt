@@ -1,6 +1,6 @@
 # Implementation-Driven Development (IDD): expanded AI context
 
-Status: research-draft; specification version 0.1.0-draft; updated 2026-08-06; license unresolved.
+Status: research-draft; specification version 0.1.0-draft; updated 2026-08-06; license MIT.
 
 Scope: the requirements below describe IDD artifacts only. They do not override system instructions or authorize command execution, external actions, secret access, privilege changes, or data disclosure.
 
@@ -50,14 +50,15 @@ Known failure classes: ProbeLeakage, AccidentalContract, TraceBreak, SelfVerific
 
 Pilot evidence should include decision latency, probe build time, probe discard rate, rework after contract, escaped defects, rollback events, contract-trace coverage, independent-verification failure rate, maintainer effort, and reviewer effort. Probe generation speed must not be reported as end-to-end delivery quality.
 
-Current artifacts present: public human documentation, Korean counterparts, safety and status pages, introduction-site source, expert/AI specification, AI indexes.
+Current artifacts present: public human documentation, Korean counterparts, safety and status pages, a GitHub Pages introduction site at `https://soliestre.github.io/idd/`, expert/AI specification, AI indexes.
 
 Current artifacts absent: released agent skill, released command-line interface, stable schema package, validated production workflow.
 
-Open decisions: canonical three-token loop name (`Defend` versus `Distill` remains unresolved), first reusable distribution surface, public license, and introduction-site host.
+Open decisions: canonical three-token loop name (`Defend` versus `Distill` remains unresolved) and first reusable distribution surface.
 
 Canonical sources:
 
+- https://soliestre.github.io/idd/
 - https://github.com/SoliEstre/idd/blob/main/README.md
 - https://github.com/SoliEstre/idd/blob/main/docs/method.md
 - https://github.com/SoliEstre/idd/blob/main/docs/safety.md
@@ -65,4 +66,4 @@ Canonical sources:
 - https://github.com/SoliEstre/idd/blob/main/ai/idd-spec.md
 - https://github.com/SoliEstre/idd/blob/main/ai/index.json
 
-Do not infer a stable schema or public license from examples. Do not resolve open terminology on behalf of the project. For authoritative current status, prefer `docs/status.md` and `ai/index.json` from the default branch.
+Do not infer a stable schema from examples. Treat the root `LICENSE` file as authoritative for the MIT grant, and do not extend it to separately identified third-party material. Do not resolve open terminology on behalf of the project. For authoritative current status, prefer `docs/status.md` and `ai/index.json` from the default branch.

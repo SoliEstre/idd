@@ -2,13 +2,15 @@
 
 [한국어](ko/hosting.md)
 
-Decision status: **not yet approved**.
+Decision status: **GitHub Pages approved on 2026-08-06**.
+
+Public site: [https://soliestre.github.io/idd/](https://soliestre.github.io/idd/)
 
 The site source in [`../site/`](../site/) is plain HTML and CSS. It does not require a server program. This keeps the first hosting choice easy to reverse.
 
-## Recommendation
+## Current decision
 
-Start with GitHub Pages after the project owner approves deployment. Keep the source free of host-only runtime features. Move to self-hosting when a recorded need makes the extra control worth the extra operations.
+Use GitHub Pages as the first public host. Keep the source free of host-only runtime features. Move to self-hosting when a recorded need makes the extra control worth the extra operations.
 
 ## GitHub Pages first
 
@@ -47,11 +49,11 @@ Revisit the decision when one of these conditions is true:
 - required logging, response policy, or operational observation cannot be provided;
 - hosting incidents or vendor dependency cross a limit recorded by the maintainer.
 
-Review the decision at first deployment and every 90 days. Preserve a custom domain during a move so public links do not need to change.
+Review the decision every 90 days, beginning on 2026-11-04. Preserve a custom domain during a future move so public links do not need to change.
 
-## Initial hosting policy
+## Current hosting policy
 
-Start with a hosting-neutral static site. After owner approval, deploy it with GitHub Pages. Keep relative URLs and no host-only runtime dependency. Reconsider self-hosting when server-side behavior, sustained platform-limit pressure, regulatory control, or operational observability requires it.
+The hosting-neutral static site is deployed with GitHub Pages. Keep relative asset URLs and no host-only runtime dependency. Reconsider self-hosting when server-side behavior, sustained platform-limit pressure, regulatory control, or operational observability requires it.
 
 ## Sources checked
 

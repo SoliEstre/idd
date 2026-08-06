@@ -14,13 +14,13 @@ The repository currently provides a public explanation, a working lifecycle, saf
 - Approved behavior is expressed as a test, contract, evaluation, or invariant.
 - Independent verification and risk-appropriate delivery gates are required before a change is shippable.
 - Public documents avoid unverified claims of superiority.
+- The repository is licensed under the MIT License; `LICENSE` is the authoritative license text.
+- The introduction site is deployed with GitHub Pages at `https://soliestre.github.io/idd/`.
 
 ## Open decisions
 
 - The canonical three-part name is not settled. Draft sources use both `Defend` and `Distill` for the final word.
 - The first reusable distribution surface, such as an agent skill or schema package, is not selected.
-- The public license is not selected.
-- The introduction site host is not approved. The current recommendation is GitHub Pages first, with clear conditions for moving to self-hosting.
 
 ## Evidence still needed
 

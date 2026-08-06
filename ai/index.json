@@ -3,10 +3,11 @@
     "name": "Implementation-Driven Development",
     "short_name": "IDD",
     "repository": "https://github.com/SoliEstre/idd",
+    "site": "https://soliestre.github.io/idd/",
     "status": "research-draft",
     "spec_version": "0.1.0-draft",
     "last_updated": "2026-08-06",
-    "license": null
+    "license": "MIT"
   },
   "audience_surfaces": {
     "human_english": "README.md",
@@ -42,9 +43,7 @@
   ],
   "unresolved": [
     "canonical_three_token_loop_name",
-    "first_reusable_distribution_surface",
-    "public_license",
-    "introduction_site_host"
+    "first_reusable_distribution_surface"
   ],
   "not_available": [
     "released_agent_skill",

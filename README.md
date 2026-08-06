@@ -50,12 +50,12 @@ IDD does not replace test-driven development. It is a route for work where the i
 - [Dense specification for AI systems and expert readers](ai/idd-spec.md)
 - [Korean documentation](docs/ko/README.md)
 
-The introduction site source is in [`site/`](site/). The site is ready for a static host, but the public deployment target has not been approved yet.
+The introduction site is published at [soliestre.github.io/idd](https://soliestre.github.io/idd/). Its host-neutral source remains in [`site/`](site/).
 
-## Current limits
+## Current limits and terms
 
 IDD is a research-stage method. The project has not yet shown that IDD is faster, safer, or better than established methods across real teams. Those are questions for controlled pilots, not marketing claims.
 
 The final word represented by the last letter in the proposed three-part name is also unresolved. Public documents therefore describe the actions instead of presenting either draft name as settled.
 
-No open-source license has been selected yet. Public access does not by itself grant permission to copy, modify, or redistribute this work.
+This repository is available under the [MIT License](LICENSE). IDD's claimed benefits remain research questions; the license permits use of the material but does not validate those claims.
