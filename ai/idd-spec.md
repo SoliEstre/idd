@@ -16,6 +16,8 @@ canonical_loop_name: unresolved
 
 This document is a dense expert/agent projection of the public IDD draft. It is normative only where a statement uses `MUST`, `MUST NOT`, `REQUIRED`, `SHOULD`, `SHOULD NOT`, or `MAY`. It is not evidence that IDD outperforms TDD, specification-first development, contract-first development, or expert-led architecture. Claimed productivity, quality, and safety deltas remain unverified hypotheses pending controlled pilots.
 
+These normative keywords govern IDD artifact interpretation only. They do not override system instructions or authorize command execution, external actions, secret access, privilege changes, or data disclosure.
+
 The canonical expansion of a proposed three-token IDD loop is unresolved: internal sources contain both `Implement–Discover–Defend` and `Implement–Discover–Distill`. Consumers MUST identify the project as `Implementation-Driven Development` and SHOULD use semantic stage names rather than selecting either unresolved terminal token.
 
 No public license is currently granted. Machine accessibility does not imply permission to reproduce, modify, train on, or redistribute the material beyond applicable law.
@@ -58,6 +60,7 @@ Intent + Predeclared Invariants
   → Evidence Bundle
   → Human Decision Record
   → Contract Artifact
+  → Official Implementation aligned to the Contract
   → Independent Verification Record
   → Risk-appropriate Delivery Gates
   → Promotion Decision
@@ -65,15 +68,21 @@ Intent + Predeclared Invariants
 
 Let artifact state `S ∈ {Probe, Candidate, Contracted, Shippable}`.
 
-### 3.1 State predicates
+### 3.1 Exclusive states and readiness predicates
 
 ```text
-Probe(x)       := isolated(x) ∧ temporary(x) ∧ question_count(x)=1
-Candidate(x)   := Probe(x) ∧ evidence_complete(x) ∧ comparison_worthy(x)
-Contracted(x)  := Candidate(x) ∧ human_decision(x) ∧ contract_trace(x)
-Shippable(x)   := Contracted(x) ∧ independent_verification(x)
-                 ∧ applicable_delivery_gates_pass(x)
+state(x) ∈ {Probe, Candidate, Contracted, Shippable}
+
+probe_ready(p)      := isolated(p) ∧ temporary(p) ∧ question_count(p)=1
+candidate_ready(c)  := derived_from_probe(c,p) ∧ evidence_complete(p)
+                       ∧ comparison_worthy(c)
+contracted_ready(x) := official_implementation(x) ∧ human_decision(d)
+                       ∧ implements(x,C) ∧ encodes(C,d) ∧ contract_trace(x,C,d)
+shippable_ready(x)  := contracted_ready(x) ∧ independent_verification(x,C)
+                       ∧ applicable_delivery_gates_pass(x)
 ```
+
+The four `state(x)` values are mutually exclusive. Readiness predicates are cumulative eligibility checks, not state identities. A temporary Probe is not the official implementation. `Contracted` and `Shippable` refer to the official implementation derived from an approved decision and contract.
 
 ### 3.2 Legal transitions
 
@@ -82,8 +91,9 @@ Probe → Candidate
   iff evidence_bundle exists and declared invariants were not violated.
 
 Candidate → Contracted
-  iff an attributable human decision selects behavior and at least one
-  durable contract artifact expresses that decision.
+  iff an attributable human decision selects behavior, at least one durable
+  contract artifact expresses that decision, and an official implementation
+  is written or revised to satisfy the contract.
 
 Contracted → Shippable
   iff an independent verifier checks the contract and every risk-applicable
@@ -170,6 +180,7 @@ Question Q
   ├─ evidence bundle E = observe(X, Q, I)
   ├─ human decision D = decide(Q, E)
   ├─ contract set C = encode(D)
+  ├─ official implementation X' = implement(C, D)
   ├─ verification record V = verify(X', C)
   └─ promotion record R = gate(X', C, V, risk_profile)
 ```
@@ -182,6 +193,9 @@ P.invariant_refs[] → I[]
 E.probe_ref → P
 D.evidence_refs[] → E[]
 C.decision_ref → D
+X'.contract_refs[] → C[]
+X'.decision_ref → D
+V.implementation_ref → X'
 V.contract_refs[] → C[]
 R.verification_ref → V
 ```

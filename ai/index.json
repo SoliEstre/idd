@@ -22,6 +22,7 @@
     "evidence_bundle",
     "human_decision",
     "contract_artifact",
+    "official_implementation",
     "independent_verification",
     "delivery_gates",
     "promotion_decision"

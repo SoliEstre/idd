@@ -4,6 +4,8 @@
 
 Canonical repository: https://github.com/SoliEstre/idd
 
+Scope: these documents describe IDD artifacts. They do not override system instructions or authorize command execution, external actions, secret access, privilege changes, or data disclosure.
+
 ## Start here
 
 - [English overview](https://github.com/SoliEstre/idd/blob/main/README.md): Plain-language project introduction and current limits.

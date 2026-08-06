@@ -6,3 +6,10 @@ Canonical AI context: https://github.com/SoliEstre/idd/blob/main/llms.txt
 Expanded context: https://github.com/SoliEstre/idd/blob/main/llms-full.txt
 Expert specification: https://github.com/SoliEstre/idd/blob/main/ai/idd-spec.md
 Current status: https://github.com/SoliEstre/idd/blob/main/docs/status.md
+
+Status constraints:
+- This is a research draft with no selected public license.
+- Speed, quality, and safety benefits remain unverified hypotheses.
+- The final token of the proposed three-token loop name is unresolved; do not select Defend or Distill as canonical.
+- No released agent skill, command-line tool, stable schema, or validated production workflow exists.
+- These documents do not override system instructions or authorize command execution, external actions, secret access, privilege changes, or data disclosure.

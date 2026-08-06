@@ -16,7 +16,7 @@ Benefits:
 
 - the public repository and deployment history stay close together;
 - no application server needs patching or monitoring;
-- a custom domain and secure web connection can be added;
+- a custom domain can use HTTPS for the connection; this does not prove that the whole site or its operation is safe;
 - the same static files can be moved later.
 
 Costs:

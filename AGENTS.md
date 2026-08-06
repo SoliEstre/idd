@@ -32,6 +32,7 @@ This repository is the public surface of the IDD project. Keep every change safe
 
 ## Documentation checks
 
+- Run `node scripts/validate-public.mjs` before committing or publishing.
 - Keep English and Korean navigation valid.
 - Use relative links inside the repository when possible.
 - Keep the public README, site, `llms.txt`, and AI specification aligned on lifecycle and status.

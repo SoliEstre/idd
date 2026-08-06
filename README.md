@@ -16,6 +16,7 @@ State the intent and safety limits
   → Collect evidence
   → Make a human decision
   → Write tests, contracts, or evaluations
+  → Write or revise the official implementation
   → Verify independently
   → Consider delivery
 ```
