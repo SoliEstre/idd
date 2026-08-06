@@ -148,6 +148,11 @@ for (const file of publicContentFiles) {
 
 try {
   const safeRoot = root.replaceAll('\\', '/');
+  const git = (args, options = {}) => execFileSync(
+    'git',
+    ['-c', `safe.directory=${safeRoot}`, '-C', root, ...args],
+    { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], ...options },
+  );
   const emailOutput = execFileSync(
     'git',
     ['-c', `safe.directory=${safeRoot}`, '-C', root, 'log', '--format=%ae%n%ce'],
@@ -159,8 +164,31 @@ try {
       fail(`reachable Git history exposes a non-noreply email: ${email}`);
     }
   }
+
+  const reachableObjects = git(['rev-list', '--objects', '--all'])
+    .split(/\r?\n/)
+    .filter(Boolean)
+    .map((line) => {
+      const separator = line.indexOf(' ');
+      return separator === -1
+        ? { objectId: line, path: '(no path)' }
+        : { objectId: line.slice(0, separator), path: line.slice(separator + 1) };
+    });
+  const inspectedBlobs = new Set();
+  for (const { objectId, path } of reachableObjects) {
+    if (inspectedBlobs.has(objectId)) continue;
+    if (git(['cat-file', '-t', objectId]).trim() !== 'blob') continue;
+    inspectedBlobs.add(objectId);
+    const blob = git(['cat-file', '-p', objectId], { maxBuffer: 10 * 1024 * 1024 });
+    if (blob.includes('\0')) continue;
+    for (const [pattern, label] of forbiddenPatterns) {
+      if (pattern.test(blob)) {
+        fail(`reachable Git blob ${objectId.slice(0, 12)} (${path}) contains a forbidden ${label} pattern`);
+      }
+    }
+  }
 } catch (error) {
-  fail(`could not inspect reachable Git metadata: ${error.message}`);
+  fail(`could not inspect reachable Git metadata and blobs: ${error.message}`);
 }
 
 const durationMs = Math.round(performance.now() - startedAt);
