@@ -1,0 +1,8 @@
+# Implementation-Driven Development (IDD)
+
+> IDD treats a small isolated implementation as evidence before a human decision turns approved behavior into a product contract.
+
+Canonical AI context: https://github.com/SoliEstre/idd/blob/main/llms.txt
+Expanded context: https://github.com/SoliEstre/idd/blob/main/llms-full.txt
+Expert specification: https://github.com/SoliEstre/idd/blob/main/ai/idd-spec.md
+Current status: https://github.com/SoliEstre/idd/blob/main/docs/status.md

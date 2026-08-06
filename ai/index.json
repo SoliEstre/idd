@@ -1,0 +1,54 @@
+{
+  "project": {
+    "name": "Implementation-Driven Development",
+    "short_name": "IDD",
+    "repository": "https://github.com/SoliEstre/idd",
+    "status": "research-draft",
+    "spec_version": "0.1.0-draft",
+    "last_updated": "2026-08-06",
+    "license": null
+  },
+  "audience_surfaces": {
+    "human_english": "README.md",
+    "human_korean": "README.ko.md",
+    "plain_documentation": "docs/README.md",
+    "expert_ai_specification": "ai/idd-spec.md",
+    "compact_ai_index": "llms.txt",
+    "expanded_ai_context": "llms-full.txt"
+  },
+  "lifecycle": [
+    "intent_and_invariants",
+    "isolated_probe",
+    "evidence_bundle",
+    "human_decision",
+    "contract_artifact",
+    "independent_verification",
+    "delivery_gates",
+    "promotion_decision"
+  ],
+  "states": ["Probe", "Candidate", "Contracted", "Shippable"],
+  "normative_invariants": [
+    "single_uncertainty",
+    "predeclaration",
+    "isolation",
+    "epistemic_separation",
+    "human_authority",
+    "contract_traceability",
+    "independent_verification",
+    "risk_routing",
+    "no_unverified_superiority_claim",
+    "public_boundary_integrity"
+  ],
+  "unresolved": [
+    "canonical_three_token_loop_name",
+    "first_reusable_distribution_surface",
+    "public_license",
+    "introduction_site_host"
+  ],
+  "not_available": [
+    "released_agent_skill",
+    "released_cli",
+    "stable_schema_package",
+    "validated_production_workflow"
+  ]
+}

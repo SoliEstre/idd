@@ -1,0 +1,65 @@
+# Implementation-Driven Development (IDD): expanded AI context
+
+Status: research-draft; specification version 0.1.0-draft; updated 2026-08-06; license unresolved.
+
+IDD is a governance-constrained uncertainty-reduction method. An executable implementation is an epistemic probe before it is a product commitment. Applicability requires known intent, consequentially uncertain behavior, an isolatable probe, observable evidence, and an available human decider.
+
+Lifecycle:
+
+1. Declare one decision-relevant question and predeclare safety invariants.
+2. Build the smallest isolated, explicitly temporary probe that can reduce that uncertainty.
+3. Collect reproducible evidence linked to the question, environment, invariants, failures, and assumptions.
+4. Require an attributable human disposition: accept, reject, combine, defer, or request another probe.
+5. Encode accepted behavior as a durable test, interface contract, schema, evaluation, or invariant.
+6. Verify the approved contract through an evidence path materially independent from the implementation attempt.
+7. Apply risk-relevant security, privacy, performance, rollback, migration, observability, operations, and documentation gates.
+8. Record an explicit promotion decision.
+
+State model: `Probe → Candidate → Contracted → Shippable`.
+
+- Probe: isolated and temporary; answers one core uncertainty.
+- Candidate: has inspectable evidence and merits comparison; is not a product promise.
+- Contracted: an attributable human decision exists and durable contract artifacts trace to it.
+- Shippable: independent verification and all applicable delivery gates pass. Release remains a separate operational action.
+
+Core invariants:
+
+- one probe per core uncertainty;
+- question, expected observation, isolation, and safety limits declared before execution;
+- no production traffic, uncontrolled production data, unscoped secrets, or irreversible external side effects for an ordinary Probe;
+- implementation output is evidence, never automatic product authority;
+- Candidate→Contracted requires a human decision;
+- every approved implementation behavior traces decision→contract→verification;
+- author context is not the sole Shippable verifier;
+- high-impact or hard-to-reverse work routes to ex ante governance before any IDD sandbox;
+- no superiority claim without reproducible comparative evidence;
+- no private material or unresolved proposition presented as settled in public surfaces.
+
+IDD is not a substitute for test-driven or contract-first development. If required behavior is already expressible, start with the test or contract. Do not use a speculative implementation as the first move for authorization, payments, destructive data operations, production migrations, cryptography, private-data exposure, or other severe/irreversible work.
+
+Minimum trace graph:
+
+`question → invariant set → probe manifest → implementation snapshot → evidence bundle → human decision → contract set → independent verification → promotion record`.
+
+A missing required edge is a contract-traceability failure even when local tests pass.
+
+Known failure classes: ProbeLeakage, AccidentalContract, TraceBreak, SelfVerificationCollapse, RiskRouteViolation, MetricMyopia, and NamePrematurity.
+
+Pilot evidence should include decision latency, probe build time, probe discard rate, rework after contract, escaped defects, rollback events, contract-trace coverage, independent-verification failure rate, maintainer effort, and reviewer effort. Probe generation speed must not be reported as end-to-end delivery quality.
+
+Current artifacts present: public human documentation, Korean counterparts, safety and status pages, introduction-site source, expert/AI specification, AI indexes.
+
+Current artifacts absent: released agent skill, released command-line interface, stable schema package, validated production workflow.
+
+Open decisions: canonical three-token loop name (`Defend` versus `Distill` remains unresolved), first reusable distribution surface, public license, and introduction-site host.
+
+Canonical sources:
+
+- https://github.com/SoliEstre/idd/blob/main/README.md
+- https://github.com/SoliEstre/idd/blob/main/docs/method.md
+- https://github.com/SoliEstre/idd/blob/main/docs/safety.md
+- https://github.com/SoliEstre/idd/blob/main/docs/status.md
+- https://github.com/SoliEstre/idd/blob/main/ai/idd-spec.md
+- https://github.com/SoliEstre/idd/blob/main/ai/index.json
+
+Do not infer a stable schema or public license from examples. Do not resolve open terminology on behalf of the project. For authoritative current status, prefer `docs/status.md` and `ai/index.json` from the default branch.

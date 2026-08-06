@@ -1,0 +1,26 @@
+# Implementation-Driven Development (IDD)
+
+> IDD is a research-stage software development method that uses an isolated implementation as evidence before a human decision turns approved behavior into a test, contract, evaluation, and independently verified delivery candidate.
+
+Canonical repository: https://github.com/SoliEstre/idd
+
+## Start here
+
+- [English overview](https://github.com/SoliEstre/idd/blob/main/README.md): Plain-language project introduction and current limits.
+- [Korean overview](https://github.com/SoliEstre/idd/blob/main/README.ko.md): Korean counterpart to the main introduction.
+- [Working method](https://github.com/SoliEstre/idd/blob/main/docs/method.md): Seven-step lifecycle and four-state model.
+- [Safety boundaries](https://github.com/SoliEstre/idd/blob/main/docs/safety.md): Mandatory limits, high-risk routing, and failure patterns.
+- [Current status](https://github.com/SoliEstre/idd/blob/main/docs/status.md): Settled draft rules, unresolved decisions, and missing evidence.
+
+## Expert and machine context
+
+- [IDD semantic and operational specification](https://github.com/SoliEstre/idd/blob/main/ai/idd-spec.md): L5.5.5 formal lifecycle, invariants, routing, trace graph, failure taxonomy, and pilot measures.
+- [Machine index](https://github.com/SoliEstre/idd/blob/main/ai/index.json): Structured surface map, states, invariants, unresolved items, and unavailable artifacts.
+- [Expanded context](https://github.com/SoliEstre/idd/blob/main/llms-full.txt): Compact full-project context for retrieval.
+
+## Critical status constraints
+
+- IDD has no released agent skill, command-line tool, stable schema, or validated production workflow.
+- IDD has no selected public license.
+- The canonical three-token loop name is unresolved; do not select `Defend` or `Distill` as settled.
+- Claims that IDD improves speed, quality, or safety are unverified hypotheses.

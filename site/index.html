@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IDD is a software development method that uses a small implementation to learn, then asks a person to decide before behavior becomes a product promise.">
+  <meta name="theme-color" content="#12131a">
+  <meta property="og:title" content="IDD — Learn from code before you promise with code">
+  <meta property="og:description" content="Build a small probe. Gather evidence. Let a person decide. Protect only the behavior you approve.">
+  <meta property="og:type" content="website">
+  <link rel="alternate" hreflang="ko" href="ko/">
+  <link rel="stylesheet" href="styles.css">
+  <title>IDD — Implementation-Driven Development</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Implementation-Driven Development",
+    "alternateName": "IDD",
+    "description": "A research-stage software development method that treats an isolated implementation as evidence before a human decision creates a product contract.",
+    "inLanguage": ["en", "ko"],
+    "isBasedOn": "https://github.com/SoliEstre/idd",
+    "version": "0.1.0-draft"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the main content</a>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="IDD home">
+      <span class="brand-mark" aria-hidden="true">i</span>
+      <span>IDD</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#why">Why</a>
+      <a href="#method">How it works</a>
+      <a href="#safety">Safety</a>
+      <a href="https://github.com/SoliEstre/idd">Docs</a>
+      <a class="language-link" href="ko/" lang="ko">한국어</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Research-stage method</p>
+        <h1 id="hero-title">Learn from code<br>before you <em>promise</em> with code.</h1>
+        <p class="hero-intro">Build a small probe. See what it teaches you. Let a person decide what the product should do. Then protect that decision with tests and an independent check.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#method">See the method</a>
+          <a class="button button-secondary" href="https://github.com/SoliEstre/idd/blob/main/README.md">Read the documentation</a>
+        </div>
+      </div>
+
+      <div class="probe-card" aria-label="A probe becomes a promise only after a decision">
+        <div class="probe-orbit" aria-hidden="true">
+          <span class="orbit-dot orbit-dot-one"></span>
+          <span class="orbit-dot orbit-dot-two"></span>
+          <span class="orbit-dot orbit-dot-three"></span>
+          <span class="probe-core">?</span>
+        </div>
+        <div class="probe-caption">
+          <strong>A probe asks a question.</strong>
+          <span>A contract records an answer.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement" id="why" aria-labelledby="why-title">
+      <p class="section-number">01 · Why</p>
+      <div>
+        <h2 id="why-title">Working code can teach you.<br>It can also mislead you.</h2>
+        <p>An AI coding agent can build an example before a team fully understands the right behavior. That speed is useful for discovery. But the first example also contains guesses and accidents.</p>
+        <p>IDD keeps the learning and blocks the accident from becoming a permanent promise.</p>
+      </div>
+    </section>
+
+    <section class="method" id="method" aria-labelledby="method-title">
+      <div class="section-heading">
+        <p class="section-number">02 · The method</p>
+        <h2 id="method-title">From a question to a protected decision.</h2>
+        <p>Each step has one job. A working implementation cannot skip the decision in the middle.</p>
+      </div>
+
+      <ol class="steps">
+        <li>
+          <span class="step-index">1</span>
+          <div><h3>Set the boundary</h3><p>Write one question and the safety limits before you build.</p></div>
+        </li>
+        <li>
+          <span class="step-index">2</span>
+          <div><h3>Build a small probe</h3><p>Keep it temporary, isolated, and focused on that one question.</p></div>
+        </li>
+        <li>
+          <span class="step-index">3</span>
+          <div><h3>Collect evidence</h3><p>Keep examples, measurements, failures, and newly found assumptions.</p></div>
+        </li>
+        <li>
+          <span class="step-index">4</span>
+          <div><h3>Let a person decide</h3><p>Accept, reject, combine, or ask for another probe.</p></div>
+        </li>
+        <li>
+          <span class="step-index">5</span>
+          <div><h3>Protect the answer</h3><p>Write tests, contracts, or evaluations that express the decision.</p></div>
+        </li>
+        <li>
+          <span class="step-index">6</span>
+          <div><h3>Check it independently</h3><p>Use a fresh reviewer or a separate, repeatable check before delivery.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="state-section" aria-labelledby="states-title">
+      <div class="section-heading compact">
+        <p class="section-number">03 · State</p>
+        <h2 id="states-title">Running is not the same as ready.</h2>
+      </div>
+      <div class="state-track" role="list" aria-label="IDD code states">
+        <article role="listitem"><span>Explore</span><h3>Probe</h3><p>A temporary answer to one question.</p></article>
+        <article role="listitem"><span>Compare</span><h3>Candidate</h3><p>Worth studying, not yet a promise.</p></article>
+        <article role="listitem"><span>Protect</span><h3>Contracted</h3><p>A person decided and a durable check records it.</p></article>
+        <article role="listitem"><span>Verify</span><h3>Shippable</h3><p>Independent and risk-based checks passed.</p></article>
+      </div>
+    </section>
+
+    <section class="safety" id="safety" aria-labelledby="safety-title">
+      <div>
+        <p class="section-number light">04 · Safety</p>
+        <h2 id="safety-title">Some work should not begin with a guess.</h2>
+      </div>
+      <div class="safety-copy">
+        <p>Authorization, payments, destructive data changes, production migrations, cryptography, and private information need stricter rules before implementation.</p>
+        <p>IDD may help later inside a safe sandbox. It is not permission to experiment on people or production systems.</p>
+        <a href="https://github.com/SoliEstre/idd/blob/main/docs/safety.md">Read the safety boundaries <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="choose" aria-labelledby="choose-title">
+      <p class="section-number">05 · Choose the right route</p>
+      <h2 id="choose-title">Do you already know the behavior?</h2>
+      <div class="choice-grid">
+        <article>
+          <p class="choice-answer">Yes</p>
+          <h3>Write the test or contract first.</h3>
+          <p>You do not need a probe to rediscover a decision you already made.</p>
+        </article>
+        <article>
+          <p class="choice-answer">Not yet</p>
+          <h3>Use one safe probe to learn.</h3>
+          <p>Keep it isolated. Gather evidence. Decide before you promote it.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <p class="eyebrow">The principle</p>
+      <h2 id="closing-title">An implementation is a probe<br>before it is a promise.</h2>
+      <div class="hero-actions centered">
+        <a class="button button-primary" href="https://github.com/SoliEstre/idd">Explore the public repository</a>
+        <a class="button button-secondary" href="https://github.com/SoliEstre/idd/blob/main/ai/idd-spec.md">Read the expert specification</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true">i</span><span>IDD</span></div>
+    <p>Research draft · No public license selected · Claims of benefit are not yet validated.</p>
+    <a href="https://github.com/SoliEstre/idd/blob/main/docs/status.md">Current status</a>
+  </footer>
+</body>
+</html>

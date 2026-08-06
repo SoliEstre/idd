@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IDD는 작은 구현으로 배우고, 동작이 제품의 약속이 되기 전에 사람이 결정하는 소프트웨어 개발 방법입니다.">
+  <meta name="theme-color" content="#12131a">
+  <meta property="og:title" content="IDD — 코드로 약속하기 전에 코드에서 배우세요">
+  <meta property="og:description" content="작은 탐침을 만들고 증거를 모읍니다. 사람이 결정한 뒤 승인한 동작만 보호합니다.">
+  <meta property="og:type" content="website">
+  <link rel="alternate" hreflang="en" href="../">
+  <link rel="stylesheet" href="../styles.css">
+  <title>IDD — 구현 주도 개발</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로 가기</a>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="IDD 한국어 홈">
+      <span class="brand-mark" aria-hidden="true">i</span>
+      <span>IDD</span>
+    </a>
+    <nav aria-label="주요 메뉴">
+      <a href="#why">이유</a>
+      <a href="#method">작업 방법</a>
+      <a href="#safety">안전</a>
+      <a href="https://github.com/SoliEstre/idd/blob/main/README.ko.md">문서</a>
+      <a class="language-link" href="../" lang="en">English</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> 연구 단계 방법</p>
+        <h1 id="hero-title">코드로 약속하기 전에<br>코드에서 <em>배우세요.</em></h1>
+        <p class="hero-intro">작은 탐침을 만듭니다. 무엇을 알려 주는지 확인합니다. 사람이 제품의 동작을 결정합니다. 그다음 그 결정을 테스트와 독립 검증으로 보호합니다.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#method">방법 보기</a>
+          <a class="button button-secondary" href="https://github.com/SoliEstre/idd/blob/main/README.ko.md">문서 읽기</a>
+        </div>
+      </div>
+
+      <div class="probe-card" aria-label="탐침은 결정을 거친 뒤에만 약속이 됩니다">
+        <div class="probe-orbit" aria-hidden="true">
+          <span class="orbit-dot orbit-dot-one"></span>
+          <span class="orbit-dot orbit-dot-two"></span>
+          <span class="orbit-dot orbit-dot-three"></span>
+          <span class="probe-core">?</span>
+        </div>
+        <div class="probe-caption">
+          <strong>탐침은 질문합니다.</strong>
+          <span>계약은 답을 기록합니다.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement" id="why" aria-labelledby="why-title">
+      <p class="section-number">01 · 이유</p>
+      <div>
+        <h2 id="why-title">동작하는 코드는 가르쳐 줍니다.<br>잘못 이끌 수도 있습니다.</h2>
+        <p>인공지능 코딩 에이전트는 팀이 올바른 동작을 완전히 이해하기 전에 예제를 만들 수 있습니다. 그 속도는 발견에 도움이 됩니다. 하지만 첫 예제에는 추측과 우연도 들어갑니다.</p>
+        <p>IDD는 배움은 남기고, 우연이 영구적인 약속이 되는 일은 막습니다.</p>
+      </div>
+    </section>
+
+    <section class="method" id="method" aria-labelledby="method-title">
+      <div class="section-heading">
+        <p class="section-number">02 · 작업 방법</p>
+        <h2 id="method-title">질문에서 보호된 결정까지.</h2>
+        <p>각 단계에는 한 가지 일이 있습니다. 동작하는 구현도 가운데 있는 결정을 건너뛸 수 없습니다.</p>
+      </div>
+
+      <ol class="steps">
+        <li><span class="step-index">1</span><div><h3>경계를 정합니다</h3><p>만들기 전에 질문 하나와 안전 경계를 씁니다.</p></div></li>
+        <li><span class="step-index">2</span><div><h3>작은 탐침을 만듭니다</h3><p>임시로 두고, 격리하고, 질문 하나에 집중합니다.</p></div></li>
+        <li><span class="step-index">3</span><div><h3>증거를 모읍니다</h3><p>예제, 측정값, 실패와 새로 발견한 가정을 남깁니다.</p></div></li>
+        <li><span class="step-index">4</span><div><h3>사람이 결정합니다</h3><p>받아들이거나, 거절하거나, 합치거나, 다른 탐침을 요청합니다.</p></div></li>
+        <li><span class="step-index">5</span><div><h3>답을 보호합니다</h3><p>결정을 표현하는 테스트, 계약 또는 평가를 씁니다.</p></div></li>
+        <li><span class="step-index">6</span><div><h3>독립적으로 확인합니다</h3><p>배포 전에 새 검토자나 별도의 반복 가능한 검사를 사용합니다.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="state-section" aria-labelledby="states-title">
+      <div class="section-heading compact">
+        <p class="section-number">03 · 상태</p>
+        <h2 id="states-title">실행된다고 준비된 것은 아닙니다.</h2>
+      </div>
+      <div class="state-track" role="list" aria-label="IDD 코드 상태">
+        <article role="listitem"><span>탐색</span><h3>Probe</h3><p>질문 하나를 위한 임시 답입니다.</p></article>
+        <article role="listitem"><span>비교</span><h3>Candidate</h3><p>살펴볼 가치가 있지만 아직 약속은 아닙니다.</p></article>
+        <article role="listitem"><span>보호</span><h3>Contracted</h3><p>사람이 결정했고 오래 가는 검사가 기록합니다.</p></article>
+        <article role="listitem"><span>검증</span><h3>Shippable</h3><p>독립 검사와 위험에 맞는 검사를 통과했습니다.</p></article>
+      </div>
+    </section>
+
+    <section class="safety" id="safety" aria-labelledby="safety-title">
+      <div>
+        <p class="section-number light">04 · 안전</p>
+        <h2 id="safety-title">추측으로 시작하면 안 되는 작업도 있습니다.</h2>
+      </div>
+      <div class="safety-copy">
+        <p>권한, 결제, 파괴적인 데이터 변경, 운영 마이그레이션, 암호화와 개인 정보에는 구현 전에 더 엄격한 규칙이 필요합니다.</p>
+        <p>IDD는 나중에 안전한 격리 공간 안에서 도울 수 있습니다. 사람이나 운영 시스템을 대상으로 실험할 권한은 아닙니다.</p>
+        <a href="https://github.com/SoliEstre/idd/blob/main/docs/ko/safety.md">안전 경계 읽기 <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="choose" aria-labelledby="choose-title">
+      <p class="section-number">05 · 알맞은 경로 선택</p>
+      <h2 id="choose-title">필요한 동작을 이미 알고 있나요?</h2>
+      <div class="choice-grid">
+        <article><p class="choice-answer">예</p><h3>테스트나 계약을 먼저 쓰세요.</h3><p>이미 한 결정을 다시 발견하기 위한 탐침은 필요하지 않습니다.</p></article>
+        <article><p class="choice-answer">아직</p><h3>안전한 탐침 하나로 배우세요.</h3><p>격리하고, 증거를 모으고, 승격 전에 결정하세요.</p></article>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <p class="eyebrow">원칙</p>
+      <h2 id="closing-title">구현은 약속이 되기 전에<br>탐침입니다.</h2>
+      <div class="hero-actions centered">
+        <a class="button button-primary" href="https://github.com/SoliEstre/idd">공개 저장소 보기</a>
+        <a class="button button-secondary" href="https://github.com/SoliEstre/idd/blob/main/ai/idd-spec.md">전문 사양 읽기</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true">i</span><span>IDD</span></div>
+    <p>연구 초안 · 공개 라이선스 미선택 · 효과 주장은 아직 검증하지 않음.</p>
+    <a href="https://github.com/SoliEstre/idd/blob/main/docs/ko/status.md">현재 상태</a>
+  </footer>
+</body>
+</html>
