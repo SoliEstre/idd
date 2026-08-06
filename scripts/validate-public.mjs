@@ -48,6 +48,7 @@ const textFiles = files.filter((file) =>
 const requiredPaths = [
   'README.md',
   'README.ko.md',
+  'assets/idd-readme-banner.png',
   'LICENSE',
   'AGENTS.md',
   '.github/workflows/pages.yml',
@@ -98,6 +99,9 @@ for (const file of files.filter((path) => extname(path).toLowerCase() === '.md')
   for (const match of content.matchAll(/\[[^\]]+\]\(([^)]+)\)/g)) {
     const target = match[1].trim().replace(/^<|>$/g, '');
     if (!localTargetExists(file, target)) fail(`${rel(file)} has a missing local link: ${target}`);
+  }
+  for (const match of content.matchAll(/(?:href|src)="([^"]+)"/g)) {
+    if (!localTargetExists(file, match[1])) fail(`${rel(file)} has a missing local HTML asset: ${match[1]}`);
   }
 }
 

@@ -1,6 +1,18 @@
-# IDD: Implementation-Driven Development
+<p align="center">
+  <a href="https://soliestre.github.io/idd/">
+    <img src="assets/idd-readme-banner.png" alt="An abstract IDD probe moving through evidence checkpoints toward a protected decision" width="100%">
+  </a>
+</p>
 
-[한국어](README.ko.md)
+<h1 align="center">IDD: Implementation-Driven Development</h1>
+
+<p align="center">
+  <a href="https://soliestre.github.io/idd/"><img alt="Introduction site on GitHub Pages" src="https://img.shields.io/badge/site-GitHub%20Pages-7447FF?style=flat-square&amp;labelColor=12131A"></a>
+  <a href="https://github.com/SoliEstre/idd/actions/workflows/validate.yml"><img alt="Public surface validation" src="https://github.com/SoliEstre/idd/actions/workflows/validate.yml/badge.svg?branch=main"></a>
+  <a href="docs/status.md"><img alt="Project status: research stage" src="https://img.shields.io/badge/status-research%20stage-FF826E?style=flat-square&amp;labelColor=12131A"></a>
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-AEF5D8?style=flat-square&amp;labelColor=12131A"></a>
+  <a href="README.ko.md"><img alt="Read in Korean" src="https://img.shields.io/badge/read-KO-F3F0E8?style=flat-square&amp;labelColor=12131A"></a>
+</p>
 
 IDD is an experimental software development method for learning from small implementations without treating the first implementation as the final answer.
 
@@ -46,7 +58,7 @@ IDD does not replace test-driven development. It is a route for work where the i
 - [The working method](docs/method.md)
 - [Safety boundaries](docs/safety.md)
 - [Project status](docs/status.md)
-- [Hosting plan](docs/hosting.md)
+- [Hosting decision](docs/hosting.md)
 - [Dense specification for AI systems and expert readers](ai/idd-spec.md)
 - [Korean documentation](docs/ko/README.md)
 

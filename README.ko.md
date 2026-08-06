@@ -1,6 +1,18 @@
-# IDD: 구현 주도 개발
+<p align="center">
+  <a href="https://soliestre.github.io/idd/ko/">
+    <img src="assets/idd-readme-banner.png" alt="IDD 탐침이 증거 확인 지점을 지나 보호된 결정으로 이동하는 추상 이미지" width="100%">
+  </a>
+</p>
 
-[English](README.md)
+<h1 align="center">IDD: 구현 주도 개발</h1>
+
+<p align="center">
+  <a href="https://soliestre.github.io/idd/ko/"><img alt="GitHub Pages의 소개 사이트" src="https://img.shields.io/badge/site-GitHub%20Pages-7447FF?style=flat-square&amp;labelColor=12131A"></a>
+  <a href="https://github.com/SoliEstre/idd/actions/workflows/validate.yml"><img alt="공개 콘텐츠 검증" src="https://github.com/SoliEstre/idd/actions/workflows/validate.yml/badge.svg?branch=main"></a>
+  <a href="docs/ko/status.md"><img alt="프로젝트 상태: 연구 단계" src="https://img.shields.io/badge/status-research%20stage-FF826E?style=flat-square&amp;labelColor=12131A"></a>
+  <a href="LICENSE"><img alt="MIT 라이선스" src="https://img.shields.io/badge/license-MIT-AEF5D8?style=flat-square&amp;labelColor=12131A"></a>
+  <a href="README.md"><img alt="영어로 읽기" src="https://img.shields.io/badge/read-EN-F3F0E8?style=flat-square&amp;labelColor=12131A"></a>
+</p>
 
 IDD는 첫 구현을 최종 답안으로 취급하지 않고, 작은 구현에서 배우기 위한 실험적 소프트웨어 개발 방법입니다.
 
@@ -46,7 +58,7 @@ IDD는 테스트 주도 개발을 대체하지 않습니다. 중요한 동작이
 - [작업 방법](docs/ko/method.md)
 - [안전 경계](docs/ko/safety.md)
 - [프로젝트 상태](docs/ko/status.md)
-- [호스팅 계획](docs/ko/hosting.md)
+- [호스팅 결정](docs/ko/hosting.md)
 - [인공지능 시스템과 전문 독자를 위한 고밀도 사양](ai/idd-spec.md)
 - [영문 문서](docs/README.md)
 
