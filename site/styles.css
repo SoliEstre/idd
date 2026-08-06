@@ -124,6 +124,12 @@ main > section {
   padding: 80px 0 100px;
 }
 
+.hero > *,
+.statement > *,
+.safety > * {
+  min-width: 0;
+}
+
 .eyebrow,
 .section-number {
   margin: 0 0 22px;
@@ -627,7 +633,7 @@ footer > a {
   }
 
   h1 {
-    font-size: clamp(2.75rem, 15vw, 4.2rem);
+    font-size: clamp(2.45rem, 12.2vw, 3.3rem);
   }
 
   h2 {
@@ -650,6 +656,15 @@ footer > a {
 
   .probe-card {
     min-height: 355px;
+  }
+
+  .probe-caption {
+    display: grid;
+    gap: 3px;
+  }
+
+  .probe-caption span {
+    text-align: left;
   }
 
   .probe-orbit {
