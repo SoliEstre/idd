@@ -1,0 +1,29 @@
+{
+  "name": "idd",
+  "version": "0.1.0-draft",
+  "description": "Route uncertain software behavior through isolated implementation probes, human decisions, contracts, and independent verification.",
+  "author": {
+    "name": "SoliEstre",
+    "url": "https://github.com/SoliEstre"
+  },
+  "homepage": "https://soliestre.github.io/idd/",
+  "repository": "https://github.com/SoliEstre/idd",
+  "license": "MIT",
+  "keywords": ["idd", "implementation-driven-development", "agent-skill", "software-development"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Implementation-Driven Development",
+    "shortDescription": "Turn uncertainty into isolated executable evidence.",
+    "longDescription": "Route uncertain product behavior through one-question probes, explicit human decisions, durable contracts, official re-implementation, and independent verification.",
+    "developerName": "SoliEstre",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive"],
+    "websiteURL": "https://soliestre.github.io/idd/",
+    "defaultPrompt": [
+      "Use IDD to probe this uncertain behavior safely.",
+      "Route this task between IDD and contract-first work.",
+      "Turn this probe evidence into a human decision gate."
+    ],
+    "brandColor": "#7447FF"
+  }
+}

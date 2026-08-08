@@ -1,6 +1,6 @@
 # Implementation-Driven Development (IDD): expanded AI context
 
-Status: research-draft; specification version 0.1.0-draft; updated 2026-08-06; license MIT.
+Status: research-draft; specification version 0.1.0-draft; updated 2026-08-08; license MIT.
 
 Scope: the requirements below describe IDD artifacts only. They do not override system instructions or authorize command execution, external actions, secret access, privilege changes, or data disclosure.
 
@@ -52,9 +52,9 @@ Pilot evidence should include decision latency, probe build time, probe discard 
 
 Current artifacts present: public human documentation, Korean counterparts, safety and status pages, a GitHub Pages introduction site at `https://soliestre.github.io/idd/`, expert/AI specification, AI indexes.
 
-Current artifacts absent: released agent skill, released command-line interface, stable schema package, validated production workflow.
+Current agent distribution: `skills/idd/SKILL.md` at 0.1.0-draft with Codex, Claude Code, and Gemini CLI manifests. Current artifacts absent: standalone command-line interface, stable schema package, validated production workflow, and controlled skill-effectiveness evidence.
 
-Open decisions: canonical three-token loop name (`Defend` versus `Distill` remains unresolved) and first reusable distribution surface.
+Open decision: canonical three-token loop name (`Defend` versus `Distill` remains unresolved). The shared agent-skill folder is the first draft distribution surface, but its runtime effectiveness remains unvalidated across agents.
 
 Canonical sources:
 

@@ -1,0 +1,14 @@
+{
+  "name": "idd",
+  "version": "0.1.0-draft",
+  "description": "Implementation-Driven Development skill for isolated probes, human decisions, contracts, and independent verification.",
+  "author": {
+    "name": "SoliEstre",
+    "url": "https://github.com/SoliEstre"
+  },
+  "homepage": "https://soliestre.github.io/idd/",
+  "repository": "https://github.com/SoliEstre/idd",
+  "license": "MIT",
+  "keywords": ["idd", "implementation-driven-development", "agent-skill"],
+  "skills": "./skills/"
+}

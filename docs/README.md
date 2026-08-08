@@ -7,7 +7,8 @@ Read these pages in order if IDD is new to you:
 1. [What IDD is](what-is-idd.md)
 2. [The working method](method.md)
 3. [Safety boundaries](safety.md)
-4. [Project status](status.md)
-5. [Hosting decision](hosting.md)
+4. [Agent skill and plugin support](skills.md)
+5. [Project status](status.md)
+6. [Hosting decision](hosting.md)
 
 These documents use plain language. Expert readers and AI systems can use the [dense IDD specification](../ai/idd-spec.md), which states the same method with formal terms and explicit invariants.

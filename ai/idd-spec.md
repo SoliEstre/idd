@@ -5,7 +5,7 @@ status: research-draft
 spec_version: 0.1.0-draft
 primary_language: en
 audience_profile: L5.5.5
-last_updated: 2026-08-06
+last_updated: 2026-08-08
 license: MIT
 canonical_loop_name: unresolved
 ---
@@ -219,7 +219,14 @@ The following is descriptive and intentionally not published as a stable JSON Sc
     "production_data": false,
     "irreversible_side_effects": false
   },
-  "evidence_refs": [],
+  "data_policy": {
+    "classification": "synthetic|deidentified",
+    "source": "fixture or reviewed de-identification record",
+    "reviewer": "accountable human"
+  },
+  "run_command": "reproducible project command",
+  "stop_condition": "accept, reject, defer, or another-probe threshold",
+  "evidence_paths": ["repository-relative path"],
   "decision_ref": null,
   "contract_refs": [],
   "verification_ref": null,
@@ -227,7 +234,7 @@ The following is descriptive and intentionally not published as a stable JSON Sc
 }
 ```
 
-Field names, serialization, identifiers, and rejection states are unresolved. Consumers MUST NOT treat this example as a compatibility promise.
+Field names, serialization, identifiers, and rejection states are unresolved. Consumers MUST NOT treat this example as a compatibility promise. The draft validator checks structure and obvious placeholders only; it does not prove that a command is safe, data is de-identified, evidence exists, or execution is authorized.
 
 ## 8. Evidence quality
 
@@ -316,7 +323,10 @@ documentation: present
 introduction_site_source: present
 introduction_site: deployed
 AI_dense_specification: present
-agent_skill_release: absent
+agent_skill_release: 0.1.0-draft
+codex_plugin_manifest: present
+claude_code_plugin_manifest: present
+gemini_cli_extension_manifest: present
 CLI_release: absent
 stable_schema: absent
 validated_production_workflow: absent

@@ -2,9 +2,9 @@
 
 [한국어](ko/status.md)
 
-Status: **research and public documentation bootstrap**.
+Status: **research draft with an initial agent-skill distribution**.
 
-The repository currently provides a public explanation, a working lifecycle, safety boundaries, a dense AI-facing specification, and a static introduction site. It does not yet provide a released agent skill, command-line tool, schema package, or validated production workflow.
+The repository currently provides a public explanation, a working lifecycle, safety boundaries, a dense AI-facing specification, a static introduction site, and a 0.1.0-draft agent skill packaged for Codex, Claude Code, and Gemini CLI. It does not yet provide a standalone command-line tool, stable schema package, validated production workflow, or controlled skill-effectiveness evidence.
 
 ## Settled for the current draft
 
@@ -16,11 +16,12 @@ The repository currently provides a public explanation, a working lifecycle, saf
 - Public documents avoid unverified claims of superiority.
 - The repository is licensed under the MIT License; `LICENSE` is the authoritative license text.
 - The introduction site is deployed with GitHub Pages at `https://soliestre.github.io/idd/`.
+- The canonical skill is `skills/idd/SKILL.md`; Codex, Claude Code, and Gemini CLI manifests package that shared source.
 
 ## Open decisions
 
 - The canonical three-part name is not settled. Draft sources use both `Defend` and `Distill` for the final word.
-- The first reusable distribution surface, such as an agent skill or schema package, is not selected.
+- The skill’s artifact shape, trigger calibration, and enforcement strength may change before a stable release.
 
 ## Evidence still needed
 

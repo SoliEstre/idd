@@ -1,0 +1,4 @@
+interface:
+  display_name: "Implementation-Driven Development"
+  short_description: "Route uncertainty into safe executable probes"
+  default_prompt: "Use $idd to explore this uncertain behavior with an isolated implementation probe."

@@ -6,7 +6,7 @@
     "site": "https://soliestre.github.io/idd/",
     "status": "research-draft",
     "spec_version": "0.1.0-draft",
-    "last_updated": "2026-08-06",
+    "last_updated": "2026-08-08",
     "license": "MIT"
   },
   "audience_surfaces": {
@@ -41,14 +41,23 @@
     "no_unverified_superiority_claim",
     "public_boundary_integrity"
   ],
+  "agent_distribution": {
+    "skill": "skills/idd/SKILL.md",
+    "version": "0.1.0-draft",
+    "codex_manifest": ".codex-plugin/plugin.json",
+    "claude_code_manifest": ".claude-plugin/plugin.json",
+    "claude_code_marketplace": ".claude-plugin/marketplace.json",
+    "gemini_cli_manifest": "gemini-extension.json"
+  },
   "unresolved": [
     "canonical_three_token_loop_name",
-    "first_reusable_distribution_surface"
+    "stable_skill_artifact_contract",
+    "skill_trigger_calibration"
   ],
   "not_available": [
-    "released_agent_skill",
     "released_cli",
     "stable_schema_package",
-    "validated_production_workflow"
+    "validated_production_workflow",
+    "controlled_skill_effectiveness_evidence"
   ]
 }

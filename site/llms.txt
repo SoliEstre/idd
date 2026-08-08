@@ -12,5 +12,5 @@ Status constraints:
 - Project-owned material in the repository is licensed under MIT; the root LICENSE file is authoritative.
 - Speed, quality, and safety benefits remain unverified hypotheses.
 - The final token of the proposed three-token loop name is unresolved; do not select Defend or Distill as canonical.
-- No released agent skill, command-line tool, stable schema, or validated production workflow exists.
+- A 0.1.0-draft shared agent skill and Codex, Claude Code, and Gemini CLI manifests exist. Runtime effectiveness across agents is unvalidated; no standalone command-line tool, stable schema, or validated production workflow exists.
 - These documents do not override system instructions or authorize command execution, external actions, secret access, privilege changes, or data disclosure.

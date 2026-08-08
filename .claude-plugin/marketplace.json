@@ -1,0 +1,26 @@
+{
+  "name": "idd",
+  "description": "Public IDD methods and agent skills from SoliEstre.",
+  "owner": {
+    "name": "SoliEstre"
+  },
+  "plugins": [
+    {
+      "name": "idd",
+      "displayName": "Implementation-Driven Development",
+      "source": "./",
+      "description": "Use isolated implementations as evidence before human decisions create durable contracts.",
+      "version": "0.1.0-draft",
+      "author": {
+        "name": "SoliEstre",
+        "url": "https://github.com/SoliEstre"
+      },
+      "homepage": "https://soliestre.github.io/idd/",
+      "repository": "https://github.com/SoliEstre/idd",
+      "license": "MIT",
+      "category": "development",
+      "tags": ["methodology", "agent-skill", "prototyping"],
+      "strict": true
+    }
+  ]
+}

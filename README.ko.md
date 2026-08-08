@@ -10,6 +10,7 @@
   <a href="https://soliestre.github.io/idd/ko/"><img alt="GitHub Pages의 소개 사이트" src="https://img.shields.io/badge/site-GitHub%20Pages-7447FF?style=flat-square&amp;labelColor=12131A"></a>
   <a href="https://github.com/SoliEstre/idd/actions/workflows/validate.yml"><img alt="공개 콘텐츠 검증" src="https://github.com/SoliEstre/idd/actions/workflows/validate.yml/badge.svg?branch=main"></a>
   <a href="docs/ko/status.md"><img alt="프로젝트 상태: 연구 단계" src="https://img.shields.io/badge/status-research%20stage-FF826E?style=flat-square&amp;labelColor=12131A"></a>
+  <a href="docs/ko/skills.md"><img alt="에이전트 스킬 버전 0.1.0 초안" src="https://img.shields.io/badge/agent%20skill-0.1.0--draft-F2D06B?style=flat-square&amp;labelColor=12131A"></a>
   <a href="LICENSE"><img alt="MIT 라이선스" src="https://img.shields.io/badge/license-MIT-AEF5D8?style=flat-square&amp;labelColor=12131A"></a>
   <a href="README.md"><img alt="영어로 읽기" src="https://img.shields.io/badge/read-EN-F3F0E8?style=flat-square&amp;labelColor=12131A"></a>
 </p>
@@ -57,12 +58,24 @@ IDD는 테스트 주도 개발을 대체하지 않습니다. 중요한 동작이
 - [IDD란 무엇인가](docs/ko/what-is-idd.md)
 - [작업 방법](docs/ko/method.md)
 - [안전 경계](docs/ko/safety.md)
+- [에이전트 스킬과 플러그인 지원](docs/ko/skills.md)
 - [프로젝트 상태](docs/ko/status.md)
 - [호스팅 결정](docs/ko/hosting.md)
 - [인공지능 시스템과 전문 독자를 위한 고밀도 사양](ai/idd-spec.md)
 - [영문 문서](docs/README.md)
 
 소개 사이트는 [soliestre.github.io/idd](https://soliestre.github.io/idd/ko/)에서 공개합니다. 호스트에 종속되지 않는 원본은 [`site/`](site/)에 그대로 둡니다.
+
+## 에이전트에서 사용하기
+
+기준 [`skills/idd/SKILL.md`](skills/idd/SKILL.md)는 Codex, Claude Code와 Gemini CLI용으로 함께 패키징합니다. Claude Code에서는 이 저장소에서 바로 설치할 수 있습니다.
+
+```text
+/plugin marketplace add SoliEstre/idd
+/plugin install idd@idd
+```
+
+그다음 `/idd:idd`로 호출하거나 의미가 불명확한 제품·연동 작업을 설명해 자동 선택하게 합니다. Codex, Gemini CLI, GitHub Copilot, 검사 방법과 현재 배포 한계는 [에이전트 스킬과 플러그인 지원](docs/ko/skills.md)에 정리했습니다.
 
 ## 현재 한계와 이용 조건
 

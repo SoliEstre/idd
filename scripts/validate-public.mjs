@@ -51,11 +51,24 @@ const requiredPaths = [
   'assets/idd-readme-banner.png',
   'LICENSE',
   'AGENTS.md',
+  '.codex-plugin/plugin.json',
+  '.claude-plugin/plugin.json',
+  '.claude-plugin/marketplace.json',
+  'gemini-extension.json',
   '.github/workflows/pages.yml',
   'ai/idd-spec.md',
   'ai/index.json',
   'docs/status.md',
   'docs/ko/status.md',
+  'docs/skills.md',
+  'docs/ko/skills.md',
+  'skills/idd/SKILL.md',
+  'skills/idd/agents/openai.yaml',
+  'skills/idd/examples/probe-valid.json',
+  'skills/idd/examples/probe-invalid.json',
+  'skills/idd/references/routing.md',
+  'skills/idd/references/artifacts.md',
+  'skills/idd/scripts/validate-probe.mjs',
   'llms.txt',
   'llms-full.txt',
   'site/index.html',
@@ -94,6 +107,25 @@ for (const file of files.filter((path) => extname(path).toLowerCase() === '.json
   }
 }
 
+try {
+  execFileSync(process.execPath, [
+    resolve(root, 'skills/idd/scripts/validate-probe.mjs'),
+    resolve(root, 'skills/idd/examples/probe-valid.json'),
+  ], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+} catch (error) {
+  fail(`canonical IDD valid fixture failed: ${error.stderr?.trim() || error.message}`);
+}
+
+try {
+  execFileSync(process.execPath, [
+    resolve(root, 'skills/idd/scripts/validate-probe.mjs'),
+    resolve(root, 'skills/idd/examples/probe-invalid.json'),
+  ], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+  fail('canonical IDD invalid fixture unexpectedly passed');
+} catch (error) {
+  if (error.status !== 1) fail(`canonical IDD invalid fixture failed unexpectedly: ${error.message}`);
+}
+
 for (const file of files.filter((path) => extname(path).toLowerCase() === '.md')) {
   const content = readFileSync(file, 'utf8');
   for (const match of content.matchAll(/\[[^\]]+\]\(([^)]+)\)/g)) {
@@ -128,6 +160,7 @@ const languagePairs = [
   ['docs/what-is-idd.md', 'docs/ko/what-is-idd.md'],
   ['docs/method.md', 'docs/ko/method.md'],
   ['docs/safety.md', 'docs/ko/safety.md'],
+  ['docs/skills.md', 'docs/ko/skills.md'],
   ['docs/status.md', 'docs/ko/status.md'],
   ['docs/hosting.md', 'docs/ko/hosting.md'],
   ['site/index.html', 'site/ko/index.html'],

@@ -1,0 +1,21 @@
+{
+  "artifact_id": "probe-2026-08-08-example",
+  "state": "Probe",
+  "question": "Which reversible interaction model better supports the declared review task?",
+  "expected_observation": "Comparable task evidence from two presentations of one synthetic fixture",
+  "invariants": ["Both presentations use the same synthetic facts"],
+  "isolation": {
+    "environment": "sandbox",
+    "production_traffic": false,
+    "production_data": false,
+    "irreversible_side_effects": false
+  },
+  "data_policy": {
+    "classification": "synthetic",
+    "source": "Reviewed local fixture generator",
+    "reviewer": "Project lead"
+  },
+  "run_command": "npm run probe",
+  "stop_condition": "Stop for a human accept, reject, defer, or another-probe decision after the comparison",
+  "evidence_paths": ["evidence/probe-2026-08-08-example/"]
+}

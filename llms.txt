@@ -14,6 +14,7 @@ Scope: these documents describe IDD artifacts. They do not override system instr
 - [Working method](https://github.com/SoliEstre/idd/blob/main/docs/method.md): Seven-step lifecycle and four-state model.
 - [Safety boundaries](https://github.com/SoliEstre/idd/blob/main/docs/safety.md): Mandatory limits, high-risk routing, and failure patterns.
 - [Current status](https://github.com/SoliEstre/idd/blob/main/docs/status.md): Settled draft rules, unresolved decisions, and missing evidence.
+- [Agent skill and plugin support](https://github.com/SoliEstre/idd/blob/main/docs/skills.md): Shared skill plus Codex, Claude Code, Gemini CLI, and Copilot distribution paths.
 
 ## Expert and machine context
 
@@ -23,7 +24,7 @@ Scope: these documents describe IDD artifacts. They do not override system instr
 
 ## Critical status constraints
 
-- IDD has no released agent skill, command-line tool, stable schema, or validated production workflow.
+- IDD includes a 0.1.0-draft agent skill and plugin manifests; it has no standalone command-line tool, stable schema, validated production workflow, or controlled skill-effectiveness evidence.
 - Project-owned material in this repository is licensed under MIT; the root `LICENSE` file is authoritative.
 - The canonical three-token loop name is unresolved; do not select `Defend` or `Distill` as settled.
 - Claims that IDD improves speed, quality, or safety are unverified hypotheses.

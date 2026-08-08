@@ -7,6 +7,7 @@ This repository is the public surface of the IDD project. Keep every change safe
 1. Read `README.md`, `docs/status.md`, and the document you will change.
 2. Use English for the main document. Add or update the matching Korean document when the meaning changes.
 3. Treat `ai/idd-spec.md` as a dense expert and machine-readable projection, not as permission to invent missing decisions.
+4. Treat `skills/idd/SKILL.md` as the canonical agent workflow. Keep Codex, Claude Code, Gemini CLI, and human documentation aligned with it.
 
 ## Public boundary
 
@@ -29,10 +30,12 @@ This repository is the public surface of the IDD project. Keep every change safe
 - Do not promote a probe without a human decision and a matching test, contract, or evaluation.
 - Require a verifier that is independent from the implementation attempt before calling a change shippable.
 - Prefer a reproducible local check for every enforced gate.
+- Keep the skill agent-neutral. Put runtime-specific metadata in `.codex-plugin/`, `.claude-plugin/`, `gemini-extension.json`, or `skills/idd/agents/` rather than forking the workflow.
 
 ## Documentation checks
 
 - Run `node scripts/validate-public.mjs` before committing or publishing.
+- Run the skill-structure validator and `node skills/idd/scripts/validate-probe.mjs <fixture>` when the skill or its artifact shape changes.
 - Keep English and Korean navigation valid.
 - Use relative links inside the repository when possible.
 - Keep the public README, site, `llms.txt`, and AI specification aligned on lifecycle and status.
