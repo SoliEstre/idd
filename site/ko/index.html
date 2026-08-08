@@ -33,7 +33,14 @@
     },
     "isBasedOn": "https://github.com/SoliEstre/idd",
     "license": "https://github.com/SoliEstre/idd/blob/main/LICENSE",
-    "version": "0.1.0-draft"
+    "version": "0.1.0-draft",
+    "hasPart": {
+      "@type": "SoftwareSourceCode",
+      "name": "IDD 에이전트 스킬",
+      "codeRepository": "https://github.com/SoliEstre/idd/tree/main/skills/idd",
+      "softwareVersion": "0.1.0-draft",
+      "programmingLanguage": "Markdown"
+    }
   }
   </script>
 </head>
@@ -49,6 +56,7 @@
       <a href="#why">이유</a>
       <a href="#method">작업 방법</a>
       <a href="#safety">안전</a>
+      <a href="#agents">에이전트</a>
       <a href="https://github.com/SoliEstre/idd/blob/main/README.ko.md">문서</a>
       <a class="language-link" href="../" lang="en" aria-label="영문 페이지로 전환">English</a>
     </nav>
@@ -140,6 +148,35 @@
       <div class="choice-grid">
         <article><p class="choice-answer">예</p><h3>테스트나 계약부터 작성하세요.</h3><p>이미 정한 동작을 다시 발견하려고 탐침을 만들 필요는 없습니다.</p></article>
         <article><p class="choice-answer">아직</p><h3>안전하게 격리된 탐침 하나로 배우세요.</h3><p>증거를 모으고, 제품 동작으로 승격하기 전에 사람이 결정합니다.</p></article>
+      </div>
+    </section>
+
+    <section class="agent-section" id="agents" aria-labelledby="agents-title">
+      <div class="agent-intro">
+        <div>
+          <p class="section-number">06 · 에이전트에서 사용</p>
+          <h2 id="agents-title">코딩 세션에<br>IDD를 가져오세요.</h2>
+        </div>
+        <p>IDD 0.1.0-draft는 재사용 가능한 기준 스킬, 탐침 manifest 구조 검사기와 주요 코딩 에이전트용 패키지를 제공합니다. 실행 중 동작은 플랫폼마다 다를 수 있고 아직 통제 검증하지 않았습니다.</p>
+      </div>
+      <div class="agent-grid">
+        <article class="agent-card agent-card-primary">
+          <p class="agent-label">Claude Code 플러그인</p>
+          <h3>공개 저장소에서 바로 설치합니다.</h3>
+          <pre class="agent-command"><code>/plugin marketplace add SoliEstre/idd
+/plugin install idd@idd</code></pre>
+          <p>제품 동작이 불확실하고 격리된 탐침으로 유용한 증거를 얻을 수 있을 때 <code>/idd:idd</code>를 호출합니다.</p>
+        </article>
+        <article class="agent-card">
+          <p class="agent-label">공용 스킬 패키지</p>
+          <h3>하나의 기준 소스를 여러 에이전트 표면에 제공합니다.</h3>
+          <ul class="platform-list">
+            <li><span>Codex</span><small>플러그인 manifest와 스킬 메타데이터</small></li>
+            <li><span>Gemini CLI</span><small>설치 가능한 GitHub extension</small></li>
+            <li><span>GitHub Copilot</span><small>Agent Skills 호환 폴더</small></li>
+          </ul>
+          <a class="agent-link" href="https://github.com/SoliEstre/idd/blob/main/docs/ko/skills.md">설치 방법과 지원 범위 보기 <span aria-hidden="true">→</span></a>
+        </article>
       </div>
     </section>
 

@@ -28,7 +28,14 @@
     "url": "https://soliestre.github.io/idd/",
     "isBasedOn": "https://github.com/SoliEstre/idd",
     "license": "https://github.com/SoliEstre/idd/blob/main/LICENSE",
-    "version": "0.1.0-draft"
+    "version": "0.1.0-draft",
+    "hasPart": {
+      "@type": "SoftwareSourceCode",
+      "name": "IDD Agent Skill",
+      "codeRepository": "https://github.com/SoliEstre/idd/tree/main/skills/idd",
+      "softwareVersion": "0.1.0-draft",
+      "programmingLanguage": "Markdown"
+    }
   }
   </script>
 </head>
@@ -44,6 +51,7 @@
       <a href="#why">Why</a>
       <a href="#method">How it works</a>
       <a href="#safety">Safety</a>
+      <a href="#agents">Agents</a>
       <a href="https://github.com/SoliEstre/idd">Docs</a>
       <a class="language-link" href="ko/" lang="ko">한국어</a>
     </nav>
@@ -157,6 +165,35 @@
           <p class="choice-answer">Not yet</p>
           <h3>Use one safe probe to learn.</h3>
           <p>Keep it isolated. Gather evidence. Decide before you promote it.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="agent-section" id="agents" aria-labelledby="agents-title">
+      <div class="agent-intro">
+        <div>
+          <p class="section-number">06 · Use it with your agent</p>
+          <h2 id="agents-title">Bring the method into the coding session.</h2>
+        </div>
+        <p>IDD 0.1.0-draft includes one reusable skill, a structural probe-manifest validator, and packaging for major coding agents. Runtime behavior remains platform-dependent and unvalidated.</p>
+      </div>
+      <div class="agent-grid">
+        <article class="agent-card agent-card-primary">
+          <p class="agent-label">Claude Code plugin</p>
+          <h3>Install directly from this public repository.</h3>
+          <pre class="agent-command"><code>/plugin marketplace add SoliEstre/idd
+/plugin install idd@idd</code></pre>
+          <p>Invoke <code>/idd:idd</code> when product behavior is uncertain and an isolated probe can produce useful evidence.</p>
+        </article>
+        <article class="agent-card">
+          <p class="agent-label">Shared skill package</p>
+          <h3>One source, several agent surfaces.</h3>
+          <ul class="platform-list">
+            <li><span>Codex</span><small>Plugin manifest and skill metadata</small></li>
+            <li><span>Gemini CLI</span><small>Installable GitHub extension</small></li>
+            <li><span>GitHub Copilot</span><small>Agent Skills-compatible folder</small></li>
+          </ul>
+          <a class="agent-link" href="https://github.com/SoliEstre/idd/blob/main/docs/skills.md">Read installation and support details <span aria-hidden="true">→</span></a>
         </article>
       </div>
     </section>
