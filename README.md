@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://soliestre.github.io/idd/">
+  <a href="https://idd.estre.so/">
     <img src="assets/idd-readme-banner.png" alt="An abstract IDD probe moving through evidence checkpoints toward a protected decision" width="100%">
   </a>
 </p>
@@ -7,7 +7,7 @@
 <h1 align="center">IDD: Implementation-Driven Development</h1>
 
 <p align="center">
-  <a href="https://soliestre.github.io/idd/"><img alt="Introduction site on GitHub Pages" src="https://img.shields.io/badge/site-GitHub%20Pages-7447FF?style=flat-square&amp;labelColor=12131A"></a>
+  <a href="https://idd.estre.so/"><img alt="Introduction site on GitHub Pages" src="https://img.shields.io/badge/site-GitHub%20Pages-7447FF?style=flat-square&amp;labelColor=12131A"></a>
   <a href="https://github.com/SoliEstre/idd/actions/workflows/validate.yml"><img alt="Public surface validation" src="https://github.com/SoliEstre/idd/actions/workflows/validate.yml/badge.svg?branch=main"></a>
   <a href="docs/status.md"><img alt="Project status: research stage" src="https://img.shields.io/badge/status-research%20stage-FF826E?style=flat-square&amp;labelColor=12131A"></a>
   <a href="docs/skills.md"><img alt="Agent skill version 0.1.0 draft" src="https://img.shields.io/badge/agent%20skill-0.1.0--draft-F2D06B?style=flat-square&amp;labelColor=12131A"></a>
@@ -64,7 +64,7 @@ IDD does not replace test-driven development. It is a route for work where the i
 - [Dense specification for AI systems and expert readers](ai/idd-spec.md)
 - [Korean documentation](docs/ko/README.md)
 
-The introduction site is published at [soliestre.github.io/idd](https://soliestre.github.io/idd/). Its host-neutral source remains in [`site/`](site/).
+The introduction site is published at [idd.estre.so](https://idd.estre.so/). Its host-neutral source remains in [`site/`](site/).
 
 ## Use it with an agent
 

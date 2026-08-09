@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://soliestre.github.io/idd/ko/">
+  <a href="https://idd.estre.so/ko/">
     <img src="assets/idd-readme-banner.png" alt="IDD 탐침이 증거 확인 지점을 지나 보호된 결정으로 이동하는 추상 이미지" width="100%">
   </a>
 </p>
@@ -7,7 +7,7 @@
 <h1 align="center">IDD: 구현 주도 개발</h1>
 
 <p align="center">
-  <a href="https://soliestre.github.io/idd/ko/"><img alt="GitHub Pages의 소개 사이트" src="https://img.shields.io/badge/site-GitHub%20Pages-7447FF?style=flat-square&amp;labelColor=12131A"></a>
+  <a href="https://idd.estre.so/ko/"><img alt="GitHub Pages의 소개 사이트" src="https://img.shields.io/badge/site-GitHub%20Pages-7447FF?style=flat-square&amp;labelColor=12131A"></a>
   <a href="https://github.com/SoliEstre/idd/actions/workflows/validate.yml"><img alt="공개 콘텐츠 검증" src="https://github.com/SoliEstre/idd/actions/workflows/validate.yml/badge.svg?branch=main"></a>
   <a href="docs/ko/status.md"><img alt="프로젝트 상태: 연구 단계" src="https://img.shields.io/badge/status-research%20stage-FF826E?style=flat-square&amp;labelColor=12131A"></a>
   <a href="docs/ko/skills.md"><img alt="에이전트 스킬 버전 0.1.0 초안" src="https://img.shields.io/badge/agent%20skill-0.1.0--draft-F2D06B?style=flat-square&amp;labelColor=12131A"></a>
@@ -64,7 +64,7 @@ IDD는 테스트 주도 개발을 대체하지 않습니다. 중요한 동작이
 - [인공지능 시스템과 전문 독자를 위한 고밀도 사양](ai/idd-spec.md)
 - [영문 문서](docs/README.md)
 
-소개 사이트는 [soliestre.github.io/idd](https://soliestre.github.io/idd/ko/)에서 공개합니다. 호스트에 종속되지 않는 원본은 [`site/`](site/)에 그대로 둡니다.
+소개 사이트는 [idd.estre.so](https://idd.estre.so/ko/)에서 공개합니다. 호스트에 종속되지 않는 원본은 [`site/`](site/)에 그대로 둡니다.
 
 ## 에이전트에서 사용하기
 

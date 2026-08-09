@@ -50,7 +50,7 @@ Known failure classes: ProbeLeakage, AccidentalContract, TraceBreak, SelfVerific
 
 Pilot evidence should include decision latency, probe build time, probe discard rate, rework after contract, escaped defects, rollback events, contract-trace coverage, independent-verification failure rate, maintainer effort, and reviewer effort. Probe generation speed must not be reported as end-to-end delivery quality.
 
-Current artifacts present: public human documentation, Korean counterparts, safety and status pages, a GitHub Pages introduction site at `https://soliestre.github.io/idd/`, expert/AI specification, AI indexes.
+Current artifacts present: public human documentation, Korean counterparts, safety and status pages, a GitHub Pages introduction site at `https://idd.estre.so/`, expert/AI specification, AI indexes.
 
 Current agent distribution: `skills/idd/SKILL.md` at 0.1.0-draft with Codex, Claude Code, and Gemini CLI manifests. Current artifacts absent: standalone command-line interface, stable schema package, validated production workflow, and controlled skill-effectiveness evidence.
 
@@ -58,7 +58,7 @@ Open decision: canonical three-token loop name (`Defend` versus `Distill` remain
 
 Canonical sources:
 
-- https://soliestre.github.io/idd/
+- https://idd.estre.so/
 - https://github.com/SoliEstre/idd/blob/main/README.md
 - https://github.com/SoliEstre/idd/blob/main/docs/method.md
 - https://github.com/SoliEstre/idd/blob/main/docs/safety.md

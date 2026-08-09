@@ -337,7 +337,7 @@ site_deployment_target: github_pages
 
 Canonical public entry points:
 
-- Introduction site: `https://soliestre.github.io/idd/`
+- Introduction site: `https://idd.estre.so/`
 - Human overview: `README.md`
 - Plain method: `docs/method.md`
 - Safety boundary: `docs/safety.md`

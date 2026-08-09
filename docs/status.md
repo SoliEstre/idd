@@ -15,7 +15,7 @@ The repository currently provides a public explanation, a working lifecycle, saf
 - Independent verification and risk-appropriate delivery gates are required before a change is shippable.
 - Public documents avoid unverified claims of superiority.
 - The repository is licensed under the MIT License; `LICENSE` is the authoritative license text.
-- The introduction site is deployed with GitHub Pages at `https://soliestre.github.io/idd/`.
+- The introduction site is deployed with GitHub Pages at `https://idd.estre.so/`.
 - The canonical skill is `skills/idd/SKILL.md`; Codex, Claude Code, and Gemini CLI manifests package that shared source.
 
 ## Open decisions

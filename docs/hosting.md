@@ -4,7 +4,7 @@
 
 Decision status: **GitHub Pages approved on 2026-08-06**.
 
-Public site: [https://soliestre.github.io/idd/](https://soliestre.github.io/idd/)
+Public site: [https://idd.estre.so/](https://idd.estre.so/)
 
 The site source in [`../site/`](../site/) is plain HTML and CSS. It does not require a server program. This keeps the first hosting choice easy to reverse.
 

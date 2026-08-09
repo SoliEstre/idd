@@ -15,7 +15,7 @@
 - 변경이 배포 가능해지기 전에 독립 검증과 위험에 맞는 배포 게이트가 필요합니다.
 - 공개 문서는 검증되지 않은 우월 주장을 피합니다.
 - 저장소는 MIT 라이선스로 제공하며, 정확한 조건은 `LICENSE`가 기준입니다.
-- 소개 사이트는 GitHub Pages를 사용해 `https://soliestre.github.io/idd/`에 배포합니다.
+- 소개 사이트는 GitHub Pages를 사용해 `https://idd.estre.so/`에 배포합니다.
 - 기준 스킬은 `skills/idd/SKILL.md`이며 Codex, Claude Code와 Gemini CLI manifest가 같은 원본을 패키징합니다.
 
 ## 열린 결정

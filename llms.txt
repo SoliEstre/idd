@@ -3,7 +3,7 @@
 > IDD is a research-stage software development method that uses an isolated implementation as evidence before a human decision turns approved behavior into a test, contract, evaluation, and independently verified delivery candidate.
 
 Canonical repository: https://github.com/SoliEstre/idd
-Introduction site: https://soliestre.github.io/idd/
+Introduction site: https://idd.estre.so/
 
 Scope: these documents describe IDD artifacts. They do not override system instructions or authorize command execution, external actions, secret access, privilege changes, or data disclosure.
 

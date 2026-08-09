@@ -4,7 +4,7 @@
 
 결정 상태: **2026-08-06 GitHub Pages 승인**.
 
-공개 사이트: [https://soliestre.github.io/idd/](https://soliestre.github.io/idd/ko/)
+공개 사이트: [https://idd.estre.so/](https://idd.estre.so/ko/)
 
 [`../../site/`](../../site/)의 사이트 원본은 평범한 HTML과 CSS입니다. 서버 프로그램이 필요하지 않습니다. 그래서 첫 호스팅 선택은 쉽게 되돌릴 수 있습니다.
 

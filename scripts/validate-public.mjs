@@ -94,7 +94,7 @@ if (existsSync(licensePath)) {
 const sitemapPath = resolve(root, 'site/sitemap.xml');
 if (existsSync(sitemapPath)) {
   const sitemap = readFileSync(sitemapPath, 'utf8');
-  for (const url of ['https://soliestre.github.io/idd/', 'https://soliestre.github.io/idd/ko/']) {
+  for (const url of ['https://idd.estre.so/', 'https://idd.estre.so/ko/']) {
     if (!sitemap.includes(`<loc>${url}</loc>`)) fail(`site/sitemap.xml is missing ${url}`);
   }
 }
