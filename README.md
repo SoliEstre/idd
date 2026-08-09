@@ -53,6 +53,8 @@ IDD separates those two outcomes. It uses implementation to discover evidence, t
 
 IDD does not replace test-driven development. It is a route for work where the important behavior is still uncertain. When the behavior is already known, use tests or contracts first.
 
+For a compact routing view, see the [English TDD · IDD · TWDD comparison infographic](assets/social/idd-twdd-tdd-comparison-x-en.png) or its [Korean edition](assets/social/idd-twdd-tdd-comparison-x.png).
+
 ## Start here
 
 - [What IDD is](docs/what-is-idd.md)

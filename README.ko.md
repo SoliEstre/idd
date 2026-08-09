@@ -53,6 +53,8 @@ IDD는 두 결과를 분리합니다. 구현으로 증거를 발견하고, 그 �
 
 IDD는 테스트 주도 개발을 대체하지 않습니다. 중요한 동작이 아직 불확실한 작업을 위한 경로입니다. 동작을 이미 알고 있다면 테스트나 계약을 먼저 작성합니다.
 
+세 방법의 라우팅 관계는 [한국어 TDD · IDD · TWDD 비교 인포그래픽](assets/social/idd-twdd-tdd-comparison-x.png) 또는 [영문판](assets/social/idd-twdd-tdd-comparison-x-en.png)에서 한눈에 볼 수 있습니다.
+
 ## 시작하기
 
 - [IDD란 무엇인가](docs/ko/what-is-idd.md)
